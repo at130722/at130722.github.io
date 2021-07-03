@@ -16,6 +16,12 @@ body {
   align-items: center;
 }
 
+.login {
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+}
+
 .page-header {
   position: absolute;
   padding: 10px;
@@ -183,11 +189,12 @@ body {
 form {border: 3px solid #f1f1f1;}
 
 input[type=text], input[type=password] {
-  width: 100%;
+  background: transparent;
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   box-sizing: border-box;
 }
 
@@ -198,7 +205,7 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
 }
 
 button:hover {
@@ -241,12 +248,38 @@ span.psw {
   }
 }
 
-  .modal-header, h4, .close {
-    background-color: #5cb85c;
-    color:white !important;
-    text-align: center;
-    font-size: 30px;
-  }
-  .modal-footer {
-    background-color: #f9f9f9;
-  }
+html {
+  background-color: #333;
+  font-family: "proxima-nova", sans-serif;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, html a {
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* Contain floats. */
+.cf:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
