@@ -1,6 +1,6 @@
 function login() {
 	console.log("login func");
-	var url = "http://118.70.80.143:3069/api/login";
+	var url = "https://apii.xn--kinqt-isa.vn:2083/api/login";
 	var data = {
 		'username': document.getElementById("username").value,
 		'password': document.getElementById("passwd").value
